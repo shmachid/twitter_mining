@@ -73,7 +73,7 @@ try:  # sample(): streaming_api.sample()
     streaming_api.filter(follow=None, track=QUERY)
 
 except Exception, e:
-    print >> sys.stderr, "Error: '%s' '%S'" % (str(datetime.now()), str(e))
+    print >> sys.stderr, "Error: '%s' '%s'" % (str(datetime.now()), str(e))
 
 finally:
     print >> sys.stderr, "disconnecting..."
